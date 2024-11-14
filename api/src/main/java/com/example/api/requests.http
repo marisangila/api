@@ -1,0 +1,31 @@
+### Criar um novo gato (POST)
+POST http://localhost:8080/api/cats
+Content-Type: application/json
+
+{
+  "name": "Mittens",
+  "breed": "Persa"
+}
+
+### Listar todos os gatos (GET)
+GET http://localhost:8080/api/cats
+
+### Buscar um gato específico pelo nome (GET)
+GET http://localhost:8080/api/cats/Whiskers
+
+### Atualizar um gato existente (PUT)
+PUT http://localhost:8080/api/cats/Whiskers
+Content-Type: application/json
+
+{
+  "name": "Whiskers",
+  "breed": "Bengal"
+}
+
+### Deletar um gato pelo nome (DELETE)
+DELETE http://localhost:8080/api/cats/Whiskers
+
+
+http://localhost:8080/swagger-ui/index.html
+
+
